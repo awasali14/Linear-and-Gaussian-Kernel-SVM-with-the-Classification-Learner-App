@@ -32,6 +32,7 @@ Through this project, the following learning outcomes are achieved:
 
 3. Evaluating the model: The trained model's performance can be evaluated using various options available in the Classification Learner app. These include the 'Scatter Plot' to visualize misclassified objects, the 'Confusion Matrix' plot to analyze correct and incorrect predictions by class, and the 'Current Model' pane for summary statistics.
 
+
 4. Exporting the model: Once satisfied with the model's performance, users can export it to the workspace by selecting 'Export Model -> Export Model' in the app. The default output variable name is 'trainedModel', which is used in the subsequent code.
 
 5. Generating decision boundary plot: The code utilizes the `decisionBoundary` function to plot the decision boundary of the trained Linear SVM model. The function takes the trained model (`mdl`), input feature matrix (`X`), and corresponding class labels (`y`) as input.
@@ -41,3 +42,55 @@ Through this project, the following learning outcomes are achieved:
 This project provides a comprehensive guide to perform classification using a Linear SVM model. By following the steps outlined in the code and utilizing the Classification Learner app, users can gain insights into the implementation, evaluation, and visualization aspects of the model. The inclusion of the `decisionBoundary` function enhances the understanding of how the model separates the classes. Through this project, users can apply the knowledge gained to their own classification tasks and make informed decisions based on the model's predictions.
 
 **Note:** The code assumes the dataset `data1.mat` is available and correctly formatted.
+
+## The end of linear svm
+
+# Gaussian SVM Classifier
+
+## Description
+
+This project showcases the implementation of a Gaussian Support Vector Machine (SVM) classifier using MATLAB. The code allows users to train the Gaussian SVM model, visualize the decision boundary, and identify misclassified data points.
+
+## Motivation
+
+The motivation behind this project is to explore the capabilities of SVM-based classifiers, specifically the Gaussian SVM. By building this project, I aim to understand the process of training a Gaussian SVM model and visualizing its performance in classifying data points.
+
+## Problem Solved
+
+The project addresses the problem of binary classification by utilizing the Gaussian SVM algorithm. Given a dataset with two classes, the Gaussian SVM model is trained to learn the decision boundary that separates the classes. This decision boundary can then be used to predict the class labels of new, unseen data points.
+
+## What I Learned
+
+Through this project, I gained the following knowledge and insights:
+
+Understanding the process of training a Gaussian SVM model using MATLAB
+Visualizing the decision boundary of the Gaussian SVM classifier
+Identifying and highlighting misclassified data points
+Utilizing MATLAB's built-in functions for contour plotting
+
+## Workflow
+
+The workflow of this project can be summarized as follows:
+
+Load the dataset from data2.mat.
+Train the Gaussian SVM model using the selected predictor and response variables.
+Export the trained model to the workspace.
+Generate a meshgrid of points to create a grid of coordinates.
+Predict the class labels for the grid points using the trained model.
+Reshape the predicted labels into the same shape as the meshgrid.
+Plot the contour of the decision boundary using the meshgrid and predicted labels.
+Plot the data points with positive class labels as black '+' markers.
+Plot the data points with negative class labels as black circles with yellow fill.
+Identify and plot the misclassified data points as red 'x' markers.
+Display the final plot.
+
+## Instructions
+
+Load the dataset using load data2.mat.
+Run the code to train the Gaussian SVM model on the dataset.
+The decision boundary and classification results will be displayed in a figure.
+Misclassified data points will be marked with a red 'x'.
+
+# Dependencies
+This project requires MATLAB and the dataset file data2.mat to be present in the working directory.
+
